@@ -1,4 +1,4 @@
-# H&W Simultaneous Login Test System (Dockerized, BullMQ, MongoDB, Redis)
+# H&W Simultaneous Login Test System (Dockerized, Python 3.11, Flask, Selenium WebDriver with Chrome)
 
 ## Overview
 
@@ -14,13 +14,6 @@ This application allows you to test and monitor multiple parallel login attempts
 - **Docker Support**: Easy deployment with Docker and Docker Compose
 
 ---
-
-## Architecture
-
-- **Backend**: Python 3.11, Flask
-- **Automation**: Selenium WebDriver with Chrome
-- **Frontend**: Bootstrap 5, JavaScript (Server-Sent Events)
-- **Containerization**: Docker
 
 ## Requirements
 
