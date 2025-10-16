@@ -1,0 +1,5 @@
+services:
+  login-automation:
+    shm_size: '2gb'
+    mem_limit: 2g
+    cpus: 2

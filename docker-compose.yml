@@ -1,0 +1,16 @@
+services:
+  login-automation:
+    build: .
+    container_name: test-hw-login
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DISPLAY=:99
+      - SE_CACHE_PATH=/tmp/selenium-cache
+    volumes:
+      - /tmp/selenium-cache:/tmp/selenium-cache
+    tmpfs:
+      - /tmp:exec,mode=1777
+    command: ["python", "app.py"]
